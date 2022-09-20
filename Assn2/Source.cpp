@@ -30,5 +30,11 @@ int main() {
         temp.lastName = lname;
         collected.push_back(temp);
     }
+#ifdef _DEBUG
+    for (int i = 0; i < collected.size(); i++)
+    {
+        cout << collected[i].firstName << " " << collected[i].lastName << endl;
+    }
+#endif // DEBUG
 
 }
